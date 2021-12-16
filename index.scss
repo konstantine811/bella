@@ -1,0 +1,260 @@
+@import "./scss/var";
+@import "./scss/reset";
+
+/*  global styles */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1260px * 2;
+  margin: 0 auto;
+  padding: $container-space;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* main wrap */
+.main-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*  txt classes */
+.h1 {
+  font-size: $fs-h1;
+  color: white;
+  font-weight: bold;
+  line-height: 80px;
+}
+
+.h2 {
+  font-size: $fs-h2;
+  color: $white;
+}
+
+.h3 {
+  font-size: $fs-h3;
+  color: $white;
+}
+
+.h4 {
+  font-size: $fs-h4;
+  color: $white;
+}
+
+.txt-lg {
+  font-size: $fs-h4;
+  color: $white;
+}
+
+.txt--semibold {
+  font-weight: 500;
+}
+
+.txt--bold {
+  font-weight: bold;
+}
+
+.txt--medium {
+  font-weight: 500;
+}
+
+.txt--center {
+  text-align: center;
+}
+
+.txt--poppins {
+  font-family: "Poppins", sans-serif;
+}
+/* txt colors */
+.txt--grey {
+  color: $grey;
+}
+/* header styles */
+
+.logo-link {
+  display: inline-block;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link,
+.nav-reveal {
+  font-size: $fs-sm;
+  color: $blue-dark;
+  font-weight: 600;
+  line-height: 28px;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.nav-link:hover {
+  color: $orange;
+}
+
+.nav-arrow {
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  border-bottom: 2px solid $blue-dark;
+  border-right: 2px solid $blue-dark;
+  transform: rotate(45deg);
+  margin-bottom: 4px;
+  margin-left: 6px;
+  transform-origin: center;
+  transition: 0.3s ease;
+}
+
+.nav-item {
+  &:hover {
+    .nav-reveal-list {
+      display: block;
+    }
+    .nav-arrow {
+      transform: rotate(225deg);
+      margin-bottom: 0px;
+      border-color: $orange;
+    }
+    .nav-reveal {
+      color: $orange;
+    }
+  }
+}
+
+.nav-reveal-list {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  background: white;
+  border: 1px solid $orange;
+  border-radius: 7px;
+  width: 214px;
+  display: none;
+  z-index: 100;
+  overflow: hidden;
+  &--dark {
+    border-color: $blue-dark;
+  }
+}
+
+.nav-reveal-list--dark .nav-reveal-link:hover {
+  background-color: $blue-dark;
+}
+
+.nav-reveal-list--dark .nav-reveal-item {
+  border-bottom-color: $blue-dark;
+}
+
+.nav-reveal-item {
+  border-bottom: 1px solid $orange;
+}
+
+.nav-reveal-item:last-child {
+  border-bottom: none;
+}
+
+.nav-reveal-link {
+  padding: 10px 18px;
+  display: block;
+  line-height: 28px;
+  font-size: 16px;
+  color: $blue-dark;
+  transition: 0.3s;
+}
+
+.nav-reveal-link:hover {
+  background-color: $orange;
+  color: white;
+}
+
+/* main section  */
+.main-section {
+  background-image: url("../assets/img/food-bgc.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.main-section__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 73px 0 133px;
+}
+
+.main-section__main-title {
+  max-width: 939px;
+  padding-top: 17px;
+}
+
+.main-section__txt {
+  padding-top: 36px;
+}
+
+.main-section__btn {
+  padding-top: 50px;
+  max-width: 551px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: $white;
+  font-size: $fs-h4;
+  font-weight: 700;
+  padding: 16px 58.5px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn--bordered {
+  border: 1px solid $white;
+}
+
+.btn--bordered:hover {
+  background-color: $orange;
+  border: 1px solid transparent;
+}
+
+.btn--orange {
+  background-color: $orange;
+  border: 1px solid transparent;
+}
+
+.btn--orange:hover {
+  background-color: transparent;
+  border: 1px solid $white;
+}
+
+/* section second */
+.section-second__phone {
+  width: 548px;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin: 0 auto;
+  bottom: 37px;
+}
+
+.img-phone:first-child {
+  position: absolute;
+  bottom: -23%;
+  left: -18%;
+}
