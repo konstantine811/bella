@@ -1,0 +1,30 @@
+.btn {
+  background-color: transparent;
+  border: none;
+  color: $white;
+  font-size: $fs-h4;
+  font-weight: 700;
+  padding: 16px 58.5px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn--bordered {
+  border: 1px solid $white;
+}
+
+.btn--bordered:hover {
+  background-color: $orange;
+  border: 1px solid transparent;
+}
+
+.btn--orange {
+  background-color: $orange;
+  border: 1px solid transparent;
+}
+
+.btn--orange:hover {
+  background-color: transparent;
+  border: 1px solid $white;
+}

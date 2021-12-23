@@ -1,0 +1,51 @@
+/*  txt classes */
+.h1 {
+  font-size: $fs-h1;
+  color: white;
+  font-weight: bold;
+  line-height: 80px;
+}
+
+.h2 {
+  font-size: $fs-h2;
+  color: $white;
+}
+
+.h3 {
+  font-size: $fs-h3;
+  color: $white;
+}
+
+.h4 {
+  font-size: $fs-h4;
+  color: $white;
+}
+
+.txt-lg {
+  font-size: $fs-h4;
+  color: $white;
+}
+
+.txt--semibold {
+  font-weight: 500;
+}
+
+.txt--bold {
+  font-weight: bold;
+}
+
+.txt--medium {
+  font-weight: 500;
+}
+
+.txt--center {
+  text-align: center;
+}
+
+.txt--poppins {
+  font-family: "Poppins", sans-serif;
+}
+/* txt colors */
+.txt--grey {
+  color: $grey;
+}
